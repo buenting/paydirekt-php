@@ -1,0 +1,29 @@
+{
+	"name": "buenting/paydirekt-php",
+	"description": "Library that provides functionality to create valid request for the paydirekt REST API",
+	"type": "library",
+	"keywords": [
+		"paydirekt"
+	],
+	"homepage": "https://github.com/paydirekt/paydirekt-php",
+	"license": "MIT",
+	"support": {
+		"docs": "https://www.paydirekt.de/haendler/merchant-api.html"
+	},
+	"replace": {
+		"paydirekt/paydirekt-php": "self.version"
+	},
+	"require": {
+		"paragonie/random_compat": "^1.2",
+		"php": ">=5.4"
+	},
+	"require-dev": {
+		"lib-curl": "*",
+		"phpunit/phpunit": "~4.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Paydirekt\\Client\\": "src/Paydirekt/Client/"
+		}
+	}
+}
